@@ -3,5 +3,20 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
- <h1> App liste dynamique </h1>
+
+<div class="conttainer">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h1> App liste dynamique </h1>
+
+                    {{ form_start( form ) }}
+                        {{ form_widget( form ) }}
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    {{ form_end( form ) }}
+        </div>
+      
+
+    </div>
+</div>
+
 {% endblock %}

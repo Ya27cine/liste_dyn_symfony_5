@@ -12,12 +12,12 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         
-       foreach ( range('A', 'F') as  $value) 
+       foreach ( range('A', 'M') as  $value) 
         { 
             $country = new Country();
             $country->setName( $value );
 
-            for ($j=0; $j < rand(5,10); $j++) { 
+            for ($j=0; $j < rand(3,29); $j++) { 
                 $city = new City();
                 $city->setName( $country->getName()."#".$j);
                 $city->setCountry( $country );
